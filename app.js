@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000;
 
 // Default route
 app.get('/', (req, res) => {
-    res.send('This is Kubernetes Demo Application.');
+    res.json({ success: true, message: 'This is Kubernetes Demo Application.' });
 });
 
 // Start the server
