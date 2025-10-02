@@ -1,0 +1,26 @@
+{
+  "name": "kubernetes-demo",
+  "version": "1.0.0",
+  "description": "Kubernetes Demo",
+  "homepage": "https://github.com/prospermbuma/kubernetes-demo#readme",
+  "bugs": {
+    "url": "https://github.com/prospermbuma/kubernetes-demo/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prospermbuma/kubernetes-demo.git"
+  },
+  "license": "ISC",
+  "author": "Prosper Mbuma",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}
