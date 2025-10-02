@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
     res.json(
         {
             message: 'This is Kubernetes Demo Application.',
-            service: 'kubernetes-demo-app',
+            service: 'node-app',
             pod: process.env.POD_NAME || 'unknown',
             time: new Date().toISOString(),
         }
