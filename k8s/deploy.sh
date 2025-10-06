@@ -7,22 +7,22 @@ IMAGE="$USERNAME/$NAME:latest"
 echo "Building Docker image..."
 docker build -t $IMAGE .
 
-echo "Pushing Docker image to Docker Hub..."
+echo -e "\nPushing Docker image to Docker Hub..."
 docker push $IMAGE
 
-echo "Applying Kubernetes configurations..."
+echo -e "\nApplying Kubernetes configurations..."
 kubectl apply -f k8s/
 
-echo "Getting pod details..."
+echo -e "\nGetting pod details..."
 kubectl get pods
 
-echo "Getting service details..."
+echo -e "\nGetting service details..."
 kubectl get services
 
-echo "Fetching the main service..."
+echo -e "\nFetching the main service..."
 kubectl get services $NAME-service
 
-echo "Getting deployment details..."
+echo -e "\nGetting deployment details..."
 kubectl get deployments
 
-echo "Done!"
+echo -e "\n Done, Your application is deployed!🎉"

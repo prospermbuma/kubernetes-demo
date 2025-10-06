@@ -13,10 +13,10 @@ $IMAGE = "$USERNAME/$NAME"
 Write-Host "Building Docker image..." -ForegroundColor Cyan
 docker build -t $IMAGE .
 
-Write-Host "Pushing Docker image to Docker Hub..." -ForegroundColor Cyan
+Write-Host "`nPushing Docker image to Docker Hub..." -ForegroundColor Cyan
 docker push $IMAGE
 
-Write-Host "Applying Kubernetes configurations..." -ForegroundColor Cyan
+Write-Host "`nApplying Kubernetes configurations..." -ForegroundColor Cyan
 kubectl apply -f k8s/
 
 Write-Host "`nGetting pod details..." -ForegroundColor Cyan
