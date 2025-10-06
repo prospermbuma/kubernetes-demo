@@ -17,7 +17,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "dev": "node --watch app.js"
+    "dev": "node --watch app.js",
+    "deploy": "powershell -ExecutionPolicy Bypass -File k8s/deploy.ps1"
   },
   "dependencies": {
     "express": "^5.1.0"
